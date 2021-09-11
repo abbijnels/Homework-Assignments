@@ -1,7 +1,8 @@
 colors = ["pink", "orange", "green", "light blue"]
 
 numbers = list(range(30, 63, 3))
-numbers2 = tuple(range(30, 63, 3))
+numbers2 = tuple(numbers)
+
 empty_list = []
 empty_list.append(0)
 empty_list.append(1)
