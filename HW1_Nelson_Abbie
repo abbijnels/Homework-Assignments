@@ -1,0 +1,17 @@
+colors = ["pink", "orange", "green", "light blue"]
+numbers = list(range(30, 63, 3))
+numbers2 = tuple(range(30, 63, 3))
+empty_list = []
+empty_list.append(0)
+empty_list.append(1)
+empty_list.append(2)
+empty_list.append(3)
+empty_list.append(4)
+empty_list.append(5)
+empty_list.remove(2)
+empty_list.insert(2, 2.0)
+print(len(empty_list))
+print(max(empty_list))
+print(min(empty_list))
+final_list = list(range(1, 11))
+sum = sum(final_list)
