@@ -1,0 +1,38 @@
+# Question 1 of Homework
+
+matrix1 <- matrix(c(7,2,9,4,12,13), nrow = 2, ncol = 3)
+matrix2 <- matrix(c(1,2,3,7,8,9,12,13,14,19,20,21), nrow = 3, ncol = 4)
+
+matrix1 %*% matrix2
+
+
+# Question 2 of Homework
+
+data <- read.csv(file = 'Amazon.csv')
+data
+
+# total amount spent on Amazon
+total <- (data$Item.Total)
+a <- sum(total)
+print(paste("Total amount spent on Amazon:", a))
+
+# mean value across all purchased items
+average <- (data$Item.Total)
+b <- mean(average)
+print(paste("Mean Value of Items:", b))
+
+# median value across all purchased items
+med <- (data$Item.Total)
+c <- median(med)
+print(paste("Median Value of Items:", c))
+
+# Smallest value across all purchased items
+minpurchase <- min(data$Item.Total)
+print(paste("Smallest Value of Items:", minpurchase))
+
+# Largest value across all purchased items
+maxpurchase <- max(data$Item.Total)
+print(paste("Largest Value of Items:", maxpurchase))
+
+
+p1<- plot((data$Order.Date), (data$Item.Total), main="Amazon Spending History", xlab="Order Date",ylab="Amount Spent", col="green")
